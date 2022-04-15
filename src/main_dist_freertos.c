@@ -31,6 +31,7 @@
 #define TASK4_PRIO 4 // 2
 #define TASK5_PRIO 5 // 1
 
+// CCM_RAM内存
 StackType_t Task1_Stack[TASK1_STACK_SIZE] CCM_RAM; /* Put task stack in CCM */
 StackType_t Task2_Stack[TASK2_STACK_SIZE] CCM_RAM; /* Put task stack in CCM */
 StackType_t Task3_Stack[TASK3_STACK_SIZE] CCM_RAM;
@@ -43,6 +44,7 @@ StaticTask_t Task3Buff CCM_RAM; /* Put TCB in CCM */
 StaticTask_t Task4Buff CCM_RAM; /* Put TCB in CCM */
 StaticTask_t Task5Buff CCM_RAM; /* Put TCB in CCM */
 
+//semaphorhandle_t 创建二进制信号
 SemaphoreHandle_t xBinarySemaphore_InpCap;
 SemaphoreHandle_t xBinarySemaphore_DMA;
 SemaphoreHandle_t xBinarySemaphore_InpCapDone;
