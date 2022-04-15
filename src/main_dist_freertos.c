@@ -49,6 +49,7 @@ SemaphoreHandle_t xBinarySemaphore_InpCapDone;
 SemaphoreHandle_t xBinarySem_ParsingDone;
 SemaphoreHandle_t xBinarySem_LCD;
 
+//创建队列
 QueueHandle_t xQueueTimeStamp;
 QueueHandle_t xQueueDispDistBuff;
 QueueHandle_t xQueueTimeBuff;
